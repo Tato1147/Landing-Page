@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 function Navbar() {
@@ -26,8 +27,12 @@ function Navbar() {
             <a href="#layanan">Layanan</a>
             <a href="#tentang">Tentang</a>
             <a href="#kontak">Kontak</a>
-            <button className="btn-portal">Log In</button>
-            <button className="btn-layanan">Sign Up</button>
+            <Link to="/login">
+              <button className="btn-login">Log In</button>
+            </Link>
+            <Link to="/signup">
+              <button className="btn-signup">Daftar</button>
+            </Link>
           </div>
 
           <button 
@@ -47,8 +52,12 @@ function Navbar() {
           <a href="#layanan">Layanan</a>
           <a href="#tentang">Tentang</a>
           <a href="#kontak">Kontak</a>
-          <button className="btn-portal">Log In</button>
-          <button className="btn-layanan">Sign Up</button>
+          <Link to="/login">
+            <button className="btn-login">Log In</button>
+          </Link>
+          <Link to="/signup">
+            <button className="btn-signup">Daftar</button>
+          </Link>
         </div>
       )}
     </nav>

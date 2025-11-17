@@ -146,3 +146,12 @@
     display: none;
   }
 }
+
+.logo-text-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-text-link:hover {
+  opacity: 0.9;
+}
