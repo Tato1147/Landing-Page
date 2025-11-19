@@ -10,7 +10,7 @@ function Login() {
     });
 
     const handleSubmit = (e) => {
-        e.proveDefault();
+        e.preventDefault();
 
         const newErrors = {
             email: '',

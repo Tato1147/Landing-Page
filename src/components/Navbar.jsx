@@ -23,10 +23,10 @@ function Navbar() {
           </div>
           
           <div className="desktop-menu">
-            <a href="#beranda">Beranda</a>
+            <Link to="/">Beranda</Link>
             <a href="#layanan">Layanan</a>
             <a href="#tentang">Tentang</a>
-            <a href="#kontak">Kontak</a>
+            <Link to="/reviews">Ulasan</Link>
             <Link to="/login">
               <button className="btn-login">Log In</button>
             </Link>
@@ -48,10 +48,10 @@ function Navbar() {
 
       {isMenuOpen && (
         <div className="mobile-menu">
-          <a href="#beranda">Beranda</a>
+          <Link to="/">Beranda</Link>
           <a href="#layanan">Layanan</a>
           <a href="#tentang">Tentang</a>
-          <a href="#kontak">Kontak</a>
+          <Link to="/reviews">Ulasan</Link>
           <Link to="/login">
             <button className="btn-login">Log In</button>
           </Link>

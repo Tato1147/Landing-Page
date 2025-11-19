@@ -1,3 +1,5 @@
+/* Auth Page Styles - Used for both Login and Signup - FIXED FULL SCREEN */
+
 .auth-page {
   min-height: 100vh;
   width: 100vw;
@@ -71,6 +73,9 @@
   box-sizing: border-box;
   background: #f9fafb;
   color: #000000;
+}
+::-ms-reveal {
+  filter: invert(100%);
 }
 
 .form-input::placeholder {
